@@ -26,8 +26,14 @@ const endpoint = 'https://app.razonet.com.br/integration/v1/companies/index'
 
 const obligation_finished = true;
 
-class 
-
+/*
+//Montar uma classe "constroi URL que recebe os parâmetros passados por request, monta a URL e devolve ela"
+class name {
+    constructor(parameters) {
+        
+    }
+}
+*/
 
 // url
 const url = `${endpoint}?obligation=${obligation}&date_start${date_start}&date_end${date_end}&fields=${fields}`;
