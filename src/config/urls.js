@@ -2,17 +2,14 @@ const dayjs = require('dayjs'); //lib para trabalhar com datas
 
 // acessToken do arquivo token.js
 const { acessToken } = require('./token.js');
-console.log(`acessToken: ${acessToken}`);
 
 
 // obligation
 const obligation = 'emissao_dare';
-console.log(`obligation: ${obligation}`);
 
 
 //date_start
 const date_start = dayjs().startOf('month').format('DD/MM/YYYY'); 
-console.log(date_start);
 
 
 //date_end
@@ -21,9 +18,15 @@ console.log(date_end);
 
 // fields
 const fields = 'cnpj,id,dominio_code,fantasy_name';
-console.log(`fields: ${fields}`);
 
 // obligation_enpoint
 const endpoint = 'https://app.razonet.com.br/integration/v1/companies/index'
-console.log(`endpoint: ${endpoint}`);
 
+function toString(){
+    console.log(`acessToken: ${ acessToken } \n
+        obligation: ${ obligation } \n
+        date_start: ${ date_start } \n
+        date_end: ${ date_end } \n
+        fields: ${ fields } \n 
+        endpoint: ${ endpoint }\n`);
+}
